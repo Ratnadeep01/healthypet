@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginButton extends StatelessWidget {
-  const LoginButton({
+   LoginButton({
     super.key,
+    required this.context,
   });
+  BuildContext context;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,9 @@ class LoginButton extends StatelessWidget {
         ),
       ),
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: () {
+          this.context.pushNamed('addDetails');
+        },
         height: 50.h,
         minWidth: 314.w,
         child: Center(

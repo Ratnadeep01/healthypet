@@ -10,7 +10,7 @@ import '../../../../utils/constants/pet_icons.dart';
 import '../../controllers/login_controllers.dart';
 
 class LoginScreen extends StatelessWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   // LoginControllers loginControllers = LoginControllers();
 
@@ -93,7 +93,9 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
                 height: 40.h,
               ),
-              const LoginButton(),
+              LoginButton(
+                context: context,
+              ),
               SizedBox(
                 height: 20.h,
               ),

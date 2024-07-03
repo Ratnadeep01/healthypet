@@ -15,8 +15,7 @@ void main() async {
     //         messagingSenderId: "715381782528",
     //         appId: "1:715381782528:web:e323376d647085afbfc0e5",
     //         measurementId: "G-P8L5QGJC3C"));
-  } else {
-  }
+  } else {}
 
   runApp(const MyApp());
 }

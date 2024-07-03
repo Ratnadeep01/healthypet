@@ -74,7 +74,7 @@ class AddDetailsScreen extends StatelessWidget {
               hint: 'Gender',
             ),
             SizedBox(
-              height: 200.h,
+              height: 280.h,
             ),
             const Center(child: AgreeButton())
           ],

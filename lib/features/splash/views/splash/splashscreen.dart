@@ -1,12 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:justtest/features/splash/views/splash/widgets/splashCircle_widget.dart';
 import 'package:justtest/features/splash/views/splash/widgets/splashHeading_widget.dart';
 import 'package:justtest/features/splash/views/splash/widgets/splashLogoTitle_widget.dart';
 import 'package:justtest/features/splash/views/splash/widgets/splashRing_widget.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 5), () {
+      context.goNamed('login');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -39,6 +39,8 @@ dependencies:
   flutter_icon_shadow:
   flutter_screenutil:
   google_fonts:
+  go_router:
+  page_transition:
 
 dev_dependencies:
   flutter_test:

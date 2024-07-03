@@ -12,7 +12,7 @@ class AgreeButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       style: ButtonStyle(
-        minimumSize: WidgetStateProperty.all(Size(double.infinity, 70.h)),
+        minimumSize: WidgetStateProperty.all(Size(double.infinity, 60.h)),
         elevation: WidgetStateProperty.all(0),
         backgroundColor:
             WidgetStateProperty.all(Color(0xFF4A4458).withOpacity(0.6)),
